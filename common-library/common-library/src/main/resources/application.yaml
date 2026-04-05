@@ -1,0 +1,5 @@
+debug: true
+
+spring:
+  application:
+    name: common-lib
