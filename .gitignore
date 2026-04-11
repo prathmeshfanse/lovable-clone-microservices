@@ -1,10 +1,44 @@
+# Build
 target/
+*/target/
+
+# IDE
 .idea/
 *.iml
-.env
-*.log
+.vscode/
+
+# OS
 .DS_Store
-.mvn
+Thumbs.db
+
+# Logs
+*.log
+
+# Env files
+.env
+
+# Archives
 *.zip
-*.cmd
-mvnw
+
+# Maven Wrapper (KEEP these - do NOT ignore)
+# .mvn/
+# mvnw
+# mvnw.cmd
+
+# Node (if any frontend later)
+node_modules/
+
+# Docker
+*.tar
+
+# Temporary files
+*.tmp
+
+# Ignore all services initially (since you're pushing in parts)
+account-service/
+api-gateway/
+common-library/
+config-service/
+discovery-service/
+intelligence-service/
+workspace-service/
