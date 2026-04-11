@@ -8,7 +8,7 @@ spring:
         git:
           uri: https://github.com/prathmeshfanse/lovable-config-server.git
           username: prathmeshfanse
-          password: ${GIT_SECRET_KEY}
+          password: ${GIT_ACCESS_TOKEN}
           default-label: main
 
 server:
