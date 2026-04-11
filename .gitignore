@@ -5,6 +5,6 @@ target/
 *.log
 .DS_Store
 .mvn
-.zip
-.cmd
-.mvnw
+*.zip
+*.cmd
+mvnw
