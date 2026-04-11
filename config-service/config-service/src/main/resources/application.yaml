@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/prathmeshfanse/lovable-config-server.git
+          username: prathmeshfanse
+          password: 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
+          default-label: main
+
+server:
+  port: 8888
