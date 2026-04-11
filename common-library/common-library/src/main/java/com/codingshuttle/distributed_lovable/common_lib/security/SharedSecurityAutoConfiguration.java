@@ -22,7 +22,7 @@ public class SharedSecurityAutoConfiguration {
         return new JwtAuthFilter(authUtil, handlerExceptionResolver);
     }
 
-    //to intercept all request whenever feign client is called to pass headers+token to the downstream services
+    //to intercept all request whenever feign client is called, to pass headers+token to the downstream services
     @Bean
     public RequestInterceptor requestInterceptor() {
         return requestTemplate -> {
