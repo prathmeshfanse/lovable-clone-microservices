@@ -41,3 +41,6 @@ config-service/
 discovery-service/
 intelligence-service/
 workspace-service/
+
+# test files
+*/src/test/
