@@ -35,12 +35,10 @@ node_modules/
 *.tmp
 
 # Ignore all services initially (since you're pushing in parts)
-account-service/
-common-library/
-config-service/
-discovery-service/
 intelligence-service/
 workspace-service/
 
 # test files
 */src/test/
+
+k8s/

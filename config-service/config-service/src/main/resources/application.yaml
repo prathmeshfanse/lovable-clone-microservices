@@ -4,12 +4,20 @@ spring:
 
   cloud:
     config:
+      label: main
       server:
         git:
-          uri: https://github.com/prathmeshfanse/lovable-config-server.git
-          username: prathmeshfanse
-          password: ${GIT_ACCESS_TOKEN}
+          uri: ${SERVER_GIT_URI}
           default-label: main
 
 server:
   port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    config:
+      enabled: false
