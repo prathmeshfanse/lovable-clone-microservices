@@ -36,7 +36,6 @@ node_modules/
 
 # Ignore all services initially (since you're pushing in parts)
 intelligence-service/
-workspace-service/
 
 # test files
 */src/test/
