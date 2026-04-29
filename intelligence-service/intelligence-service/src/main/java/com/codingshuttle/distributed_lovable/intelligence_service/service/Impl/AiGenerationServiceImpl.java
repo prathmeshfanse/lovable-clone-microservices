@@ -56,7 +56,7 @@ public class AiGenerationServiceImpl implements AiGenerationService {
     private static final Pattern FILE_TAG_PATTERN = Pattern.compile("<file path=\"([^\"]+)\">(.*?)</file>", Pattern.DOTALL);
 
     @Override
-    @PreAuthorize("@security.canEditProject(#projectId)")
+    //@PreAuthorize("@security.canEditProject(#projectId)")
     public Flux<StreamResponse> streamResponse(String userMessage, Long projectId) {
 
 //        usageService.checkDailyTokensUsage();
