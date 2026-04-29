@@ -34,9 +34,6 @@ node_modules/
 # Temporary files
 *.tmp
 
-# Ignore all services initially (since you're pushing in parts)
-intelligence-service/
-
 # test files
 */src/test/
 
