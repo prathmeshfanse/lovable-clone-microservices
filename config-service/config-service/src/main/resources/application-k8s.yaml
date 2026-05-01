@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: k8s
+#Disable eureka client/server discovery to handle discovery in kubernetes ourselves
+  cloud:
+    discovery:
+      enabled: false
+    config:
+      server:
+        git:
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
